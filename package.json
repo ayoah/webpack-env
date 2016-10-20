@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www --envName dev",
+    "start-prod": "node ./bin/www --envName prod",
+    "start-stg": "node ./bin/www --envName stg",
+    "start-test": "node ./bin/www --envName test"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
