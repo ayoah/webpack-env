@@ -11,7 +11,7 @@ var users = require('./routes/users');
 var app = express();
 
 var webpack = require('webpack');
-var webpackConfig = require('./webpack.module')(app.get('env'));
+var webpackConfig = require('./webpack.config');
 var compiler = webpack(webpackConfig);
 
 app.use(require("webpack-dev-middleware")(compiler, {
